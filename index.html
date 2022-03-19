@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="header-bg"></div>
+    <form>
+      <div><span class="circle"></span></div>
+      <input type="text" placeholder="Create a todo...">
+    </form>
+
+    <div class="tasks">
+      <ul>
+        <li>
+          <div class="left">
+            <button aria-label="finish button" class="finish"><span class="circle"></span></button>
+            <p>Listen to Twice</p>
+          </div>
+          <button aria-label="remove button" class="remove">
+            <img src="images/icon-cross.svg" alt="">
+          </button>
+        </li>
+        
+        <li>
+          <div class="left">
+            <button aria-label="finish button" class="finish"><span class="circle"></span></button>
+            <p>Listen to Twice</p>
+          </div>
+          <button aria-label="remove button" class="remove">
+            <img src="images/icon-cross.svg" alt="">
+          </button>
+        </li>
+      </ul>
+
+      <div class="state">
+        <p><span id="remain">2<span> items left</p>
+        <button>Clear Completed</button>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><button id="all">All</button></li>
+        <li><button id="active">Active</button></li>
+        <li><button id="completed">Completed</button></li>
+      </ul>
+    </nav>
+  </main>
+
+<!-- 
+  Todo
+
+  items left
+
+  All
+  Active 
+  Completed
+
+  Clear Completed
+
+  Drag and drop to reorder list -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
