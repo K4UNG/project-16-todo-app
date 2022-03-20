@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -16,6 +16,7 @@
   <main>
     <div class="header-bg">
       <img src="images/bg-mobile-dark.jpg" alt="">
+      <img src="images/bg-mobile-light.jpg" alt="">
     </div>
 
     <div class="container">
@@ -23,8 +24,8 @@
       <div class="header">
           <h1 class="logo">todo</h1>
           <button class="theme" aria-label="theme toggle">
-            <img src="images/icon-moon.svg" alt="">
-            <img src="images/icon-sun.svg" class="hidden" alt="">
+            <img src="images/icon-moon.svg" class="hidden" alt="">
+            <img src="images/icon-sun.svg" alt="">
           </button>
       </div>
 
@@ -35,46 +36,23 @@
 
       <div class="tasks">
         <ul class="task-list">
-          <!-- <li draggable="true">
-            <div class="left checked">
-              <button aria-label="finish button" class="finish">
-                <img src="images/icon-check.svg" alt="">
-                <span class="circle"></span>
-              </button>
-              <p>Listen to Twice</p>
-            </div>
-            <button aria-label="remove button" class="remove">
-              <img src="images/icon-cross.svg" alt="">
-            </button>
-          </li>
-          
-          <li>
-            <div class="left" draggable="true">
-              <button aria-label="finish button" class="finish">
-                <img src="images/icon-check.svg" alt="">
-                <span class="circle"></span>
-              </button>
-              <p>Dance to Twice</p>
-            </div>
-            <button aria-label="remove button" class="remove">
-              <img src="images/icon-cross.svg" alt="">
-            </button>
-          </li> -->
+          <!-- tasks -->
         </ul>
 
         <div class="state">
-          <p><span id="remain">2<span> items left</p>
-          <button>Clear Completed</button>
+          <p id="remain"></p>
+          <button id="clear">Clear Completed</button>
         </div>
       </div>
 
       <nav>
-        <ul>
+        <ul class="buttons">
           <li><button class="active"a id="all">All</button></li>
           <li><button id="active">Active</button></li>
-          <li><button id="completed">Completed</button></li>
+          <li><button id="complete">Completed</button></li>
         </ul>
       </nav>
+      <p>Drag and Drop to reorder list</p>
     </div>
 
     
@@ -83,19 +61,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </div>
   </main>
-
-<!-- 
-  Todo
-
-  items left
-
-  All
-  Active 
-  Completed
-
-  Clear Completed
-
-  Drag and drop to reorder list -->
 
 </body>
 </html>
