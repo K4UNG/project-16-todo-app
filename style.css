@@ -13,7 +13,7 @@
 
 :root {
   --pri-blue: hsl(220, 98%, 61%);
-  --check-background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  --check-background: linear-gradient(-45deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
   --clr-one-200: hsl(235, 21%, 11%);
   --clr-two-200: hsl(235, 24%, 19%);
   --clr-400: hsl(234, 39%, 85%);
@@ -194,8 +194,8 @@ main .container .tasks .task-list li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1.2em;
-  -webkit-transition: opacity 0s, background-color .2s ease, color .2s ease;
-  transition: opacity 0s, background-color .2s ease, color .2s ease;
+  -webkit-transition: opacity 0s, background-color .2s ease, color .2s ease, border-color .2s ease;
+  transition: opacity 0s, background-color .2s ease, color .2s ease, border-color .2s ease;
 }
 
 main .container .tasks .task-list li.dragging {

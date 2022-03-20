@@ -12,7 +12,7 @@
 
 :root {
     --pri-blue: hsl(220, 98%, 61%);
-    --check-background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    --check-background: linear-gradient(-45deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
     
     // dark theme
     --clr-one-200: hsl(235, 21%, 11%);
@@ -169,7 +169,8 @@ main {
                     padding: 1.2em;
                     transition: opacity 0s,
                             background-color .2s ease,
-                            color .2s ease;
+                            color .2s ease,
+                            border-color .2s ease;
 
                     &.dragging {
                         opacity: .5;
